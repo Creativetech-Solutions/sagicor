@@ -1,0 +1,4 @@
+[04-Mar-2018 23:14:56 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/sagicorc/public_html/application/controllers/admin/Profile.php on line 201
+[04-Mar-2018 23:15:50 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/sagicorc/public_html/application/controllers/admin/Profile.php on line 201
+[07-Mar-2018 08:19:45 America/Los_Angeles] PHP Parse error:  syntax error, unexpected ')', expecting ';' in /home/sagicorc/public_html/application/controllers/admin/Reports.php on line 811
+[07-Mar-2018 08:32:26 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '$selectData' (T_VARIABLE) in /home/sagicorc/public_html/application/controllers/admin/Reports.php on line 823

@@ -1,0 +1,337 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  /*border-bottom: 1px solid #e5e5e5;*/
+      border-bottom: 1px solid #00A2E5;
+    border-bottom-width: 3px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.barcalona-banner {
+    margin-top: -20px; 
+    margin-bottom: -10px;
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+/* grid rotator */
+.ri-grid{
+	margin: 30px auto 30px;
+	position: relative;
+	height: auto;
+}
+
+.ri-grid ul {
+	list-style: none;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Clear floats by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.ri-grid ul:before,
+.ri-grid ul:after{
+	content: '';
+    display: table;
+}
+
+.ri-grid ul:after {
+    clear: both;
+}
+
+.ri-grid ul {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+} 
+
+.ri-grid ul li {
+	-webkit-perspective: 400px;
+	-moz-perspective: 400px;
+	-o-perspective: 400px;
+	-ms-perspective: 400px;
+	perspective: 400px;	
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	background: #000;
+}
+
+.ri-grid ul li a{
+	display: block;
+	outline: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #333;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+/* Grid wrapper sizes */
+.ri-grid-size-1{
+	width: 55%;
+}
+.ri-grid-size-2{
+	width: 100%;
+}
+.ri-grid-size-3{
+	width: 100%;
+	margin-top: 0px;
+}
+
+/* Shadow style */
+.ri-shadow:after,
+.ri-shadow:before{
+	content: "";
+	position: absolute;
+	z-index: -2;
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	height: 20%;
+	max-width: 300px;
+	max-height: 100px;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+.ri-shadow:after{
+	right: 10px;
+	left: auto;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+.ri-grid-loading:after,
+.ri-grid-loading:before{
+	display: none;
+}
+
+.ri-loading-image{
+	display: none;
+}
+
+.ri-grid-loading .ri-loading-image{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	margin: 100px 0 0 -15px;
+	display: block;
+}
+.loginfloat.login_fail{
+	height:400px;
+}
+.loginfloat {
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    z-index: 50;
+    clear: both; 
+    position: absolute; 
+    margin-left:630px; 
+    width:255px; 
+    height:380px; 
+    background-color:#ffffff; 
+    text-align: center;
+}
+
+.resetfloat {
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    clear: both; 
+    height:360px; 
+    background-color:#ffffff; 
+    text-align: center;
+}
+
+.p-container {
+ 	padding:0 20px 20px 20px; 
+}
+
+.p-container:after {
+ 	clear:both;
+  display:table;
+  content:"";
+}
+
+.p-container span a{
+  display:block;
+  float:left;
+  color: #00ADEF;
+  padding-top:8px;
+  padding-bottom:20px;
+  text-decoration: none;
+}
+
+label {
+        
+    color:#00adef;
+    padding-bottom:9px;
+    font-size: 9pt;
+}
+
+input[type=submit]:not(.no_custom) {
+ 	padding:5px 20px;
+  border:1px solid rgba(0,0,0,0.4);
+  text-shadow:0 -1px 0 rgba(0,0,0,0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 10px 10px rgba(255,255,255,0.1);
+  border-radius:0.3em;
+  background:#0184ff;
+  color:white;
+  float:right;
+  font-weight:bold;
+  cursor:pointer;
+  font-size:13px;
+}
+
+input[type=submit]:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 -10px 10px rgba(255,255,255,0.1);
+}
+
+input[type=text]:hover,
+input[type=password]:hover,
+label:hover ~ input[type=text],
+label:hover ~ input[type=password] {
+ 	background:#00ADEF;
+    color: #000;
+}
+
+.right10{margin-right: 10px;}
+.left10{margin-left: 10px;}
+}
+
+
+/* == STYLE ELEMENTS == */  
+
+.bgred,.bggreen,.bgblue,.bgorange{border-radius:4px;box-shadow:0 1px 0 #FFF inset, 0 2px 4px rgba(0,0,0,0.08);margin:15px 0;padding:10px;position:relative}
+
+.bgred p,.bggreen p,.bgblue p,.bgorange p{color:#fff;margin:0 10px 0 0;text-shadow:1px 1px 0 rgba(0,0,0,0.2)}
+
+.bgblue{background:#88bbc8;border:1px solid #88bbc8}
+
+.bgred{background:#ee9695;border:1px solid #ee9695}
+
+.bgorange{background:#ffba83;border:1px solid #ffba83}
+
+.bggreen{background:#afc98c;border:1px solid #afc98c}
+
+.close,div.bggreen .close,div.bgorange .close,div.bgred .close,div.bgblue .close{color:#000;cursor:pointer;font-size:24px;opacity:0.2;position:absolute;right:10px;text-shadow:0 1px 0 #fff;top:8px}
+
+div.bgred p span,div.bggreen p span,div.bgorange p span,div.bgblue p span{display:inline-block;margin-right:10px}
+
+div.bgred ul.error{color:#fff;margin-left:35px}
+
+.pagetip,.greentip,.redtip,.orangetip,.bluetip{background:#F3F3F3;border:1px solid #F3F3F3;border-radius:4px;box-shadow:0 1px 0 #FFF inset, 0 2px 4px rgba(0,0,0,0.08);color:#818181;margin-bottom:25px;padding:15px;text-shadow:0 1px #fff}
+
+.greentip{background:#afc98c;border-color:#afc98c;color:#fff;text-shadow:1px 1px 0 rgba(0,0,0,0.2)}
+
+.redtip{background:#ee9695;border-color:#ee9695;color:#fff;text-shadow:1px 1px 0 rgba(0,0,0,0.2)}
+
+.orangetip{background:#ffba83;border-color:#ffba83;color:#fff;text-shadow:1px 1px 0 rgba(0,0,0,0.2)}
+
+.bluetip{background:#88bbc8;border-color:#88bbc8;color:#fff;text-shadow:1px 1px 0 rgba(0,0,0,0.2)}
+
+.flip-img{
+  -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.site-lgo_n{margin-left:-41px!important;}
