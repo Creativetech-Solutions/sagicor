@@ -10,7 +10,7 @@ There is no such dependencies, to start Git clone the repositry or download the 
 
 ### Prerequisites
 
-As prerequisites you must have installed python 3.6 and a package to create virtual environment like pipenv
+As prerequisites you must have installed php and a local server like apache and database management tool - 
 
 ### Installing
 Start Local Server
